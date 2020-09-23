@@ -153,10 +153,70 @@ button{
   }
 }
 
+@keyframes landing-anim{
+  0%{
+    transform: translate(0, 300);
+
+  }
+  75% {
+    transform: translate(0, -30px);
+
+  }
+  80% {
+    transform: translate(0, -30px);
+
+  }
+  100%{
+    transform: translate(0, 0);
+
+  }
+}
+
+.anim-2{
+  fill: #d6809c;
+  stroke: #d6809c;
+  path{
+    transform: translate(0, 300px);
+  }
+}
+
 .grid-item:hover{
   .anim-1{
     path:nth-child(n){
       stroke-dashoffset: 0;
     }
   }
+  .anim-2{
+    path{
+      animation: landing-anim 0.5s ease forwards;
+      &:nth-child(1){
+        animation-delay: .2s;
+      }
+      &:nth-child(2){
+        animation-delay: .4s;
+      }
+      &:nth-child(3){
+        animation-delay: .6s;
+      }
+      &:nth-child(4){
+        animation-delay: .8s;
+      }
+      &:nth-child(5){
+        animation-delay: 1.0s;
+      }
+      &:nth-child(6){
+        animation-delay: 1.2s;
+      }
+      &:nth-child(7){
+        animation-delay: 1.4s;
+      }
+      &:nth-child(8){
+        animation-delay: 1.6s;
+      }
+      &:nth-child(9){
+        animation-delay: 1.8s;
+      }
+    }
+  }
 }
+

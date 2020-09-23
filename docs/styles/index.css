@@ -147,5 +147,62 @@ button {
     stroke-dasharray: 582.130615234375;
     stroke-dashoffset: 582.130615234375; }
 
+@-webkit-keyframes landing-anim {
+  0% {
+    transform: translate(0, 300); }
+  75% {
+    transform: translate(0, -30px); }
+  80% {
+    transform: translate(0, -30px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes landing-anim {
+  0% {
+    transform: translate(0, 300); }
+  75% {
+    transform: translate(0, -30px); }
+  80% {
+    transform: translate(0, -30px); }
+  100% {
+    transform: translate(0, 0); } }
+
+.anim-2 {
+  fill: #d6809c;
+  stroke: #d6809c; }
+  .anim-2 path {
+    transform: translate(0, 300px); }
+
 .grid-item:hover .anim-1 path:nth-child(n) {
   stroke-dashoffset: 0; }
+
+.grid-item:hover .anim-2 path {
+  -webkit-animation: landing-anim 0.5s ease forwards;
+          animation: landing-anim 0.5s ease forwards; }
+  .grid-item:hover .anim-2 path:nth-child(1) {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s; }
+  .grid-item:hover .anim-2 path:nth-child(2) {
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s; }
+  .grid-item:hover .anim-2 path:nth-child(3) {
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s; }
+  .grid-item:hover .anim-2 path:nth-child(4) {
+    -webkit-animation-delay: .8s;
+            animation-delay: .8s; }
+  .grid-item:hover .anim-2 path:nth-child(5) {
+    -webkit-animation-delay: 1.0s;
+            animation-delay: 1.0s; }
+  .grid-item:hover .anim-2 path:nth-child(6) {
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s; }
+  .grid-item:hover .anim-2 path:nth-child(7) {
+    -webkit-animation-delay: 1.4s;
+            animation-delay: 1.4s; }
+  .grid-item:hover .anim-2 path:nth-child(8) {
+    -webkit-animation-delay: 1.6s;
+            animation-delay: 1.6s; }
+  .grid-item:hover .anim-2 path:nth-child(9) {
+    -webkit-animation-delay: 1.8s;
+            animation-delay: 1.8s; }
