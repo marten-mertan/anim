@@ -1,0 +1,42 @@
+<div class="debug-menu">
+    <ul>
+        <p>PAGES</p>
+        <br/>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="index.html">Index</a></li>
+    </ul>
+
+    <style>
+    .debug-menu{
+        position: fixed;
+        padding: 20px 40px;
+        top: 10%;
+        width: 150px;
+        left: -130px;
+        background-color:#fcf1ef;
+        z-index: 999;
+        transition: all .5s ease-in-out;
+    }
+    .debug-menu li{
+        
+    }
+    .debug-menu li a{
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        color: #000;
+        transition: all .4s ease;
+    }
+    .debug-menu li a:hover{
+        border-color: #000;
+        color: #000;
+    }
+    .debug-menu:hover{
+        left: 0;
+        opacity: 1;
+    }
+    .debug-menu li+li{
+        margin-top: 8px;
+    }
+    </style>
+</div>
