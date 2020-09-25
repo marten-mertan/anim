@@ -155,7 +155,7 @@ button{
 
 @keyframes landing-anim{
   0%{
-    transform: translate(0, 300);
+    transform: translate(0, 300px);
 
   }
   75% {
@@ -177,6 +177,53 @@ button{
   stroke: #d6809c;
   path{
     transform: translate(0, 300px);
+  }
+}
+
+@keyframes water-anim{
+  0%{
+    transform: translate(0, 0);
+
+  }
+  100% {
+    transform: translate(-673px, 0);
+
+  }
+}
+@keyframes water-anim-secondary{
+  0%{
+    transform: translate(673px, 0);
+
+  }
+  100% {
+    transform: translate(0, 0);
+
+  }
+}
+@keyframes container-floating{
+  20% {
+    transform: translate(0, -28px);
+  }
+  25% {
+    transform: translate(0, -30px);
+  }
+  30% {
+    transform: translate(0, -28px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  70% {
+    transform: translate(0, 28px);
+  }
+  75% {
+    transform: translate(0, 30px);
+  }
+  80% {
+    transform: translate(0, 28px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
@@ -216,6 +263,25 @@ button{
       &:nth-child(9){
         animation-delay: 1.8s;
       }
+    }
+  }
+  .anim-3{
+    animation: container-floating 4s linear infinite;
+    .water-front{
+      animation: water-anim 1s linear infinite;
+  
+    }
+    .water-front-secondary{
+      animation: water-anim-secondary 1s linear infinite;
+  
+    }
+    .water-back{
+      animation: water-anim 1s linear reverse infinite;
+  
+    }
+    .water-back-secondary{
+      animation: water-anim-secondary 1s linear reverse infinite;
+  
     }
   }
 }

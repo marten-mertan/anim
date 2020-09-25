@@ -149,7 +149,7 @@ button {
 
 @-webkit-keyframes landing-anim {
   0% {
-    transform: translate(0, 300); }
+    transform: translate(0, 300px); }
   75% {
     transform: translate(0, -30px); }
   80% {
@@ -159,7 +159,7 @@ button {
 
 @keyframes landing-anim {
   0% {
-    transform: translate(0, 300); }
+    transform: translate(0, 300px); }
   75% {
     transform: translate(0, -30px); }
   80% {
@@ -172,6 +172,66 @@ button {
   stroke: #d6809c; }
   .anim-2 path {
     transform: translate(0, 300px); }
+
+@-webkit-keyframes water-anim {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-673px, 0); } }
+
+@keyframes water-anim {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-673px, 0); } }
+
+@-webkit-keyframes water-anim-secondary {
+  0% {
+    transform: translate(673px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes water-anim-secondary {
+  0% {
+    transform: translate(673px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-webkit-keyframes container-floating {
+  20% {
+    transform: translate(0, -28px); }
+  25% {
+    transform: translate(0, -30px); }
+  30% {
+    transform: translate(0, -28px); }
+  50% {
+    transform: translate(0, 0); }
+  70% {
+    transform: translate(0, 28px); }
+  75% {
+    transform: translate(0, 30px); }
+  80% {
+    transform: translate(0, 28px); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes container-floating {
+  20% {
+    transform: translate(0, -28px); }
+  25% {
+    transform: translate(0, -30px); }
+  30% {
+    transform: translate(0, -28px); }
+  50% {
+    transform: translate(0, 0); }
+  70% {
+    transform: translate(0, 28px); }
+  75% {
+    transform: translate(0, 30px); }
+  80% {
+    transform: translate(0, 28px); }
+  100% {
+    transform: translate(0, 0); } }
 
 .grid-item:hover .anim-1 path:nth-child(n) {
   stroke-dashoffset: 0; }
@@ -206,3 +266,17 @@ button {
   .grid-item:hover .anim-2 path:nth-child(9) {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s; }
+
+.grid-item:hover .anim-3 {
+  -webkit-animation: container-floating 4s linear infinite;
+          animation: container-floating 4s linear infinite; }
+  .grid-item:hover .anim-3 .water-front {
+    -webkit-animation: water-anim 1s linear infinite;
+            animation: water-anim 1s linear infinite; }
+  .grid-item:hover .anim-3 .water-front-secondary {
+    -webkit-animation: water-anim-secondary 1s linear infinite;
+            animation: water-anim-secondary 1s linear infinite; }
+  .grid-item:hover .anim-3 .water-back {
+    animation: water-anim 1s linear reverse infinite; }
+  .grid-item:hover .anim-3 .water-back-secondary {
+    animation: water-anim-secondary 1s linear reverse infinite; }
